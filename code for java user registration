@@ -1,0 +1,34 @@
+class UserRegistration
+{
+    String uName;
+    String pWord;
+    String fName;
+    String lName;
+    String addr;
+    String mailId;
+    long phNo;
+    void getUserRegistration()
+    {
+       System.out.println("===Display from Objects===");
+       System.out.println("User Name=:"+uName);
+       System.out.println("Password=:"+pWord);
+       System.out.println("First Name=:"+fName);
+       System.out.println("Last Name=:"+lName);
+       System.out.println("Address=:"+addr);
+       System.out.println("Mail Id=:"+mailId);
+       System.out.println("Ph No=:"+phNo);   
+    }
+    
+    public static void main(String args[])
+    {
+       UserRegistration ur=new UserRegistration();
+       ur.uName = "Ashok Kantiga";
+       ur.pWord="@123Ashok";
+       ur.fName="Ashok";
+       ur.lName="Kantiga";
+       ur.addr="SRT 956 SanathNagar Hyderabad,500018";
+       ur.mailId="ashokk@gmail.com";
+       ur.phNo=7569841238L;
+       ur.getUserRegistration();
+       }
+}
